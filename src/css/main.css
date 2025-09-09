@@ -1,0 +1,72 @@
+/* Base */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: #ffffff;            /* white page background */
+  color: #1f2937;                 /* neutral text */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Layout */
+.container {
+  min-height: 100%;
+  display: grid;
+  place-items: start center;      /* center horizontally */
+  padding: 48px 16px;
+}
+
+.card {
+    text-align: center;
+  background: #ffc3e3;            /* colored card */
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  width: min(94vw, 720px);
+  padding: 24px 24px 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+.email {                       /* replace <b><i> with CSS */
+    margin: 0 0 12px;
+    font-style: italic;
+    font-weight: 700;
+  }
+/* Elements that must be centered */
+img {
+  display: block;
+  width: 150px;                   /* required size */
+  height: 150px;                  /* required size */
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 12px;            /* horizontally centered */
+  border: 3px solid #dbeafe;
+}
+
+.name {
+  text-align: center;             /* centered heading */
+  margin: 0 0 8px;
+  font-size: 1.75rem;
+}
+
+/* Bio can be left-aligned or centered (both allowed). Using left here. */
+.bio {
+  margin: 12px 0 16px;
+  text-align: left;
+}
+
+/* Center the link */
+.cta { text-align: center; margin: 0; }
+.profile-link {
+  display: inline-block;          /* so it can center neatly */
+  padding: 10px 14px;
+  border-radius: 9999px;
+  text-decoration: none;
+  background: #1d4ed8;
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+.profile-link:hover,
+.profile-link:focus {
+  background: #1e40af;
+}
